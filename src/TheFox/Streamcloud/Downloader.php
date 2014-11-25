@@ -148,7 +148,6 @@ class Downloader{
 													$percent = sprintf('%5.2f', $e->downloaded / $e->downloadSize);
 												}
 												$points = (int)($percent / 20);
-												#print 'Downloaded '.$e->downloaded.' of '.$e->downloadSize.' '.'Uploaded '.$e->uploaded.' of '.$e->uploadSize."\n";
 												print ' '.$percent.' %  ['.str_repeat('#', $points).str_repeat(' ', 20 - $points).']'."\r";
 											});
 
@@ -218,7 +217,8 @@ class Downloader{
 	}
 	
 	private function createGuzzleHttpClient(){
-		$userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36';
+		$userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) ';
+		$userAgent .= 'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36';
 		$this->cookieJar = new FileCookieJar('cookies/cookies.txt');
 		$clientOptions = array(
 			'headers' => array(
