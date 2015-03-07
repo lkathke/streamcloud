@@ -5,7 +5,7 @@ namespace TheFox\Streamcloud;
 class Streamcloud{
 	
 	const NAME = 'Streamcloud';
-	const VERSION = '0.1.0';
+	const VERSION = '0.2.0-dev';
 	const RELEASE = 1;
 	
 }
