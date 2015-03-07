@@ -21,7 +21,7 @@
 	
 	<testsuites>
 		<testsuite name="My Test Suite">
-			<file>tests/BasicTest.php</file>
+			<file>tests/TheFox/Test/BasicTest.php</file>
 		</testsuite>
 	</testsuites>
 	<filter>
